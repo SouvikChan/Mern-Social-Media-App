@@ -68,3 +68,10 @@ mongoose
     // Post.insertMany(posts);
   })
   .catch((error) => console.log(`${error} did not connect`));
+
+
+  app.get('/', async (req, res) => {
+    res.status(200).json({
+      message: 'Hello from Server',
+    });
+  });

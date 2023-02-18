@@ -22,7 +22,7 @@ const UserWidget = ({ userId, picturePath }) => {
   const main = palette.neutral.main;
 
   const getUser = async () => {
-    const response = await fetch(`http://localhost:3001/users/${userId}`, {
+    const response = await fetch(`https://mern-social-media-app-syj1-qxutdm4jv-souvikchan.vercel.app/users/${userId}`, {
       method: "GET",
       headers: { Authorization: `Bearer ${token}` },
     });
